@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Tic Tac Toe</h1>
+    <h3 style="text-align: center;" id="playerMessage"></h3>
+    <div class="container">
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+        <div class="clickBox" ></div>
+    </div>
+
+    <div class="details">
+        <table>
+            <thead>
+                <td></td>
+                <td></td>
+                <td></td>
+            </thead>
+            <tr>
+                <td>First Players Name</td>
+                <td><input type="text" id="player1" /></td>
+                <td><input type="radio" name="choice" id="player1Choice"/></td>
+            </tr>
+            <tr>
+                <td>Second Players Name</td>
+                <td><input type="text" id="player2" /></td>
+                <td><input type="radio" name="choice" id="player2choice" /></td>
+            </tr>
+            <tfoot>
+                <td></td>
+                <td><button id="submit">Play Game</button></tr></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+    <div id="winningMessage">
+    </div>
+    <div class="reset">
+        <button id="reset">Reset</button>
+    </div>
+    <script src="sandbox.js"></script>
+</body>
+</html>

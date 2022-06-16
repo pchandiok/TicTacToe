@@ -1,0 +1,68 @@
+:root
+{
+    --cell-size: 100px;
+    --color:  #0275d8;
+    --color-set: #81c3fd;
+}
+
+.container
+{
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.details, .reset
+{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+table
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+.clickBox
+{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    font-size: 100px;
+    color: var(--color);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.clickBox:hover
+{
+    background-color: var(--color-set);
+}
+
+.clickBox:nth-child(1), .clickBox:nth-child(2), .clickBox:nth-child(3)
+{
+    border-top: none;
+}
+
+.clickBox:nth-child(4), .clickBox:nth-child(7), .clickBox:nth-child(1)
+{
+    border-left: none;
+}
+
+.clickBox:nth-child(7), .clickBox:nth-child(8), .clickBox:nth-child(9)
+{
+    border-bottom: none;
+}
+
+.clickBox:nth-child(9), .clickBox:nth-child(6), .clickBox:nth-child(3)
+{
+    border-right: none;
+}
